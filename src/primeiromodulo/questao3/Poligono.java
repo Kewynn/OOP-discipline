@@ -30,7 +30,10 @@ public class Poligono {
 			y[temp] = p.getCordenadaY();
 			temp++;
 		}
-		for(int i = 0; i < sizevalue;i++){
+		SegundoFor: for(int i = 0; i < sizevalue;i++){
+			if(i == sizevalue-1){
+				break SegundoFor;
+			}
 			soma+=(x[i]*y[i+1])-(x[i+1]*y[i]); 
 		}
 		soma/=2;
