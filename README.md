@@ -1,2 +1,2 @@
-# OOP-discipline
-Classroom exercises.
+# OOP-Discipline
+Classroom exercises. 
