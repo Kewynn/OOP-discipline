@@ -4,24 +4,25 @@ public class Ponto {
 	private int cordenadaX;
 	private int cordenadaY;
 	
-	public Ponto(){
-		this.cordenadaX = 0;
-		this.cordenadaY = 0;
-	}
-	
 	public Ponto(int cordenadaX, int cordenadaY) {
 
 		this.cordenadaX = cordenadaX;
 		this.cordenadaY = cordenadaY;
 	}
+	public Ponto(){
+		this.cordenadaX = 0;
+		this.cordenadaY = 0;
+	}
+	
+
 	public int getCordenadaX() {
-		return cordenadaX;
+		return this.cordenadaX;
 	}
 	public void setCordenadaX(int cordenadaX) {
 		this.cordenadaX = cordenadaX;
 	}
 	public int getCordenadaY() {
-		return cordenadaY;
+		return this.cordenadaY;
 	}
 	public void setCordenadaY(int cordenadaY) {
 		this.cordenadaY = cordenadaY;

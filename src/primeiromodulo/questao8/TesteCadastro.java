@@ -26,6 +26,7 @@ public class TesteCadastro {
 		cp.cadastraPessoa(cTres);
 		
 		cp.getPessoas();
+		
 
 	}
 

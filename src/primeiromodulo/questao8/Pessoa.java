@@ -27,9 +27,9 @@ public abstract class Pessoa {
 		this.nascimento = nascimento;
 	}
 	public abstract void imprimeDados();
-	@Override
+	
 	public String toString() {
-		return "Pessoa nome=" + nome + ", nascimento=" + nascimento.toString();
+		return "Nome: " + nome + ", Data de nascimento: " + nascimento.toString();
 	}
 	
 

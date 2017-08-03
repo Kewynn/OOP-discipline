@@ -9,7 +9,7 @@ public class Pessoa {
 	
 	
 	public Pessoa() {
-		super();
+		
 		this.nome = "";
 		this.idade = 0;
 		this.sexo = "";
@@ -20,7 +20,6 @@ public class Pessoa {
 	}
 
 	public Pessoa(String nome, int idade, double altura, double peso, String sexo) {
-		super();
 		this.nome = nome;
 		this.idade = idade;
 		this.sexo = sexo;
@@ -70,7 +69,7 @@ public class Pessoa {
 		this.sexo = sexo;
 	}
 	public double calcularIMC(){
-		double temp = this.peso /(Math.pow(this.altura, 2));
+		double temp = this.peso / (this.altura*this.altura);
 		return temp;
 	}
 	public String toString(){

@@ -16,6 +16,7 @@ public class CadastroPessoa {
 	public void cadastraPessoa(Pessoa p){
 		pessoas.add(p);
 	}
+
 	public void getPessoas(){
 		for(Pessoa p: pessoas){
 			if(p instanceof Gerente){

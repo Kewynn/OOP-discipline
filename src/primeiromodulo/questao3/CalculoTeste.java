@@ -11,9 +11,9 @@ public class CalculoTeste {
 		int lados = leitor.nextInt();
 		for(int k = 0; k < lados; k++){
 			Ponto p = new Ponto();
-			System.out.println("Cordenada X");
+			System.out.println("Cordenada X: ");
 			p.setCordenadaX(leitor.nextInt());
-			System.out.println("Cordenada Y");
+			System.out.println("Cordenada Y: ");
 			p.setCordenadaY(leitor.nextInt());
 			testPoligono.adicionarPonto(p);
 		}

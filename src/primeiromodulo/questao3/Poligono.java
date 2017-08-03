@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Poligono {
-	List<Ponto> pontos;
+	private List<Ponto> pontos;
 
 	public Poligono() {
 		this.pontos = new ArrayList<Ponto>();
+	}
+	public Poligono(List<Ponto> pontos) {
+		this.pontos = pontos;
 	}
 	public void adicionarPonto(Ponto var){
 		pontos.add(var);
@@ -24,8 +27,9 @@ public class Poligono {
 		int [] x = new int[sizevalue]
 				,y = new int[sizevalue];
 		int soma = 0;
+		int temp = 0;
 		for(Ponto p: pontos){
-			int temp = 0;
+			
 			x[temp] = p.getCordenadaX();
 			y[temp] = p.getCordenadaY();
 			temp++;
@@ -34,7 +38,9 @@ public class Poligono {
 			if(i == sizevalue-1){
 				break SegundoFor;
 			}
-			soma+=(x[i]*y[i+1])-(x[i+1]*y[i]); 
+			int tempDois =(x[i]*y[i+1])-(x[i+1]*y[i]); 
+			soma+=tempDois;
+		
 		}
 		soma/=2;
 		return soma;
