@@ -1,11 +1,25 @@
 package primeiromodulo.questao4;
 
+import java.io.IOException;
 
 public class Bits {
-	int[] arrayBits;
+	private boolean[] arrayBits;
+	
+	public Bits(int n){
+		arrayBits = new boolean[n];
+	}
+	
+	public Bits and(Bits a) throws IOException{
+		if(arrayBits.length != a.getArrayBits().length)
+			throw new IOException();
+		for(int i = 0; i < arrayBits.length; i++)
+			arrayBits[i] = arrayBits[i] && a.getArrayBits()[i];
+		return this;
+		
+	}
 
-	public int[] getArrayBits() {
-		return arrayBits;
+	public boolean[] getArrayBits() {
+		return this.arrayBits;
 	}
 
 	public void addBit(int b) {

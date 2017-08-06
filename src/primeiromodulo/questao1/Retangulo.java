@@ -35,20 +35,17 @@ public class Retangulo {
 	public double calcularPerimetro(){
 		return 2*(this.altura + this.largura);
 	}
-	
+	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
+		if(obj == null)
 			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Retangulo other = (Retangulo) obj;
-		if (Double.doubleToLongBits(altura) != Double.doubleToLongBits(other.altura))
-			return false;
-		if (Double.doubleToLongBits(largura) != Double.doubleToLongBits(other.largura))
-			return false;
-		return true;
+		if(obj instanceof Retangulo){
+			Retangulo r = (Retangulo) obj;
+			if(this.altura == r.getAltura() && this.largura == r.getLargura()){
+				return true;
+			}
+			
+		}return false;
 	}
 	
 	public String toString() {

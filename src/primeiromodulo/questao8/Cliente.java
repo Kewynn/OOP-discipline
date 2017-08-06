@@ -2,6 +2,7 @@ package primeiromodulo.questao8;
 
 public class Cliente extends Pessoa{
 	private int codigo;
+
 	
 
 	@Override
