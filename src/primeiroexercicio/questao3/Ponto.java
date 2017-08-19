@@ -1,4 +1,4 @@
-package primeiromodulo.questao3;
+package primeiroexercicio.questao3;
 
 public class Ponto {
 	private int cordenadaX;
@@ -33,18 +33,15 @@ public class Ponto {
 	}
 	
 	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
+		if(obj == null){
 			return false;
-		if (!(obj instanceof Ponto))
-			return false;
-		Ponto other = (Ponto) obj;
-		if (cordenadaX != other.cordenadaX)
-			return false;
-		if (cordenadaY != other.cordenadaY)
-			return false;
-		return true;
+		}
+		if(obj instanceof Ponto){
+			Ponto p = (Ponto) obj;
+			if(this.cordenadaX == p.getCordenadaX() && this.cordenadaY == p.getCordenadaY()){
+				return true;
+			}
+		}return false;
 	}
 	
 	

@@ -1,10 +1,8 @@
-package primeiromodulo.questao9;
+package primeiroexercicio.questao9;
 
-public abstract class Quadrilateros implements FormasGeometricas{
+public abstract class Quadrilateros implements FormasGeometricas {
 	private int ladoBase;
 	private int ladoAltura;
-
-
 
 	public Quadrilateros(int base, int altura) {
 		this.ladoBase = base;
@@ -16,10 +14,9 @@ public abstract class Quadrilateros implements FormasGeometricas{
 	}
 
 	public abstract double calcularArea();
-	
-	public double calcularPerimetro(){
-		return this.ladoBase+this.ladoAltura;
+
+	public double calcularPerimetro() {
+		return this.ladoBase + this.ladoAltura;
 	}
-	
 
 }

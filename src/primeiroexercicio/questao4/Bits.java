@@ -1,4 +1,4 @@
-package primeiromodulo.questao4;
+package primeiroexercicio.questao4;
 
 import java.io.IOException;
 

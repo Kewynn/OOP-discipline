@@ -1,4 +1,4 @@
-package primeiromodulo.questao2;
+package primeiroexercicio.questao2;
 
 public class Pessoa {
 	private String nome;
@@ -6,17 +6,15 @@ public class Pessoa {
 	private String sexo;
 	private double peso;
 	private double altura;
-	
-	
+
 	public Pessoa() {
-		
+
 		this.nome = "";
 		this.idade = 0;
 		this.sexo = "";
-		this.peso =  0.0;
+		this.peso = 0.0;
 		this.altura = 0.0;
-		
-		
+
 	}
 
 	public Pessoa(String nome, int idade, double altura, double peso, String sexo) {
@@ -25,8 +23,7 @@ public class Pessoa {
 		this.sexo = sexo;
 		this.peso = peso;
 		this.altura = altura;
-		
-		
+
 	}
 
 	public String getNome() {
@@ -68,27 +65,25 @@ public class Pessoa {
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
-	public double calcularIMC(){
-		double temp = this.peso / (this.altura*this.altura);
+
+	public double calcularIMC() {
+		double temp = this.peso / (this.altura * this.altura);
 		return temp;
 	}
-	public String toString(){
+
+	public String toString() {
 		String temp = "";
-		if(calcularIMC() <= 18.5){
+		if (calcularIMC() <= 18.5) {
 			temp = "Abaixo do peso normal";
-		}else if(calcularIMC() > 18.5 && calcularIMC() <= 25 ){
+		} else if (calcularIMC() > 18.5 && calcularIMC() <= 25) {
 			temp = "Peso normal";
-		}
-		else if(calcularIMC() > 25 && calcularIMC() <= 30){
+		} else if (calcularIMC() > 25 && calcularIMC() <= 30) {
 			temp = "Acima do peso normal";
-		}else if(calcularIMC() > 30){
+		} else if (calcularIMC() > 30) {
 			temp = "Obesidade";
 		}
 		return temp;
-		
+
 	}
-	
-	
-	
 
 }
