@@ -8,6 +8,7 @@ public class Quadrado extends Quadrilateros {
 		this.lado = base;
 	}
 
+
 	public double calcularArea() {
 		return this.lado * this.lado;
 	}

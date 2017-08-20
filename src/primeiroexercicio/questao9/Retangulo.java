@@ -1,10 +1,10 @@
 package primeiroexercicio.questao9;
 
 public class Retangulo extends Quadrilateros {
-	private int base;
-	private int altura;
+	private double base;
+	private double altura;
 
-	public Retangulo(int base, int altura) {
+	public Retangulo(double base, double altura) {
 		super(base, altura);
 		this.base = base;
 		this.altura = altura;

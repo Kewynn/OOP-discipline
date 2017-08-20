@@ -1,10 +1,10 @@
 package primeiroexercicio.questao9;
 
 public abstract class Quadrilateros implements FormasGeometricas {
-	private int ladoBase;
-	private int ladoAltura;
+	private double ladoBase;
+	private double ladoAltura;
 
-	public Quadrilateros(int base, int altura) {
+	public Quadrilateros(double base, double altura) {
 		this.ladoBase = base;
 		this.ladoAltura = altura;
 	}

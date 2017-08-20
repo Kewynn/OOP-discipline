@@ -4,8 +4,11 @@ public class Circulo implements FormasGeometricas {
 	private double raio;
 	public final static double PI = 3.1416;
 
-	public Circulo(int raio) {
+	public Circulo(double raio) {
 		this.raio = raio;
+	}
+	public Circulo(){
+		this.raio = 0.0;
 	}
 
 	public double calcularArea() {

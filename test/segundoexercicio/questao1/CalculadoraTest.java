@@ -41,5 +41,10 @@ public class CalculadoraTest {
 		
 		
 	}
+	@Test
+	public void testeDividir(){
+		assertEquals(9.4, 9.428,  calc.dividir(a, 7));
+	}
+
 
 }
