@@ -1,4 +1,4 @@
-package segundoexercicio.questao1;
+package segundoexercicio.calculator;
 
 public class Calculadora {
 
