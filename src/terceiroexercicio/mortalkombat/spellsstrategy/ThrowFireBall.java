@@ -1,11 +1,11 @@
 package terceiroexercicio.mortalkombat.spellsstrategy;
 
-public class ThrowFireBall implements WarlockBehavior {
+public class ThrowFireBall implements WarlockBehavior{
 
 	@Override
 	public int throwSpell() {
 		return 20;
-
+		
 	}
 
 }
