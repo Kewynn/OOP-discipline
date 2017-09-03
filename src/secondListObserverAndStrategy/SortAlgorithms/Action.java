@@ -1,4 +1,4 @@
-package secondList.SortAlgorithms;
+package secondListObserverAndStrategy.SortAlgorithms;
 
 
 public class Action {

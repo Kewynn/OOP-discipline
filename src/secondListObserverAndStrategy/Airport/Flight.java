@@ -1,4 +1,4 @@
-package secondList.Airport;
+package secondListObserverAndStrategy.Airport;
 
 public class Flight extends AirportDeparture{
 	private String destiny;

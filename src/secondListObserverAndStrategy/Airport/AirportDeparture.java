@@ -1,4 +1,4 @@
-package secondList.Airport;
+package secondListObserverAndStrategy.Airport;
 
 import java.util.ArrayList;
 import java.util.Iterator;

@@ -1,4 +1,4 @@
-package secondList.UOGame;
+package secondListObserverAndStrategy.UOGame;
 
 public class TitaniumArmor implements PureWarArmorBehavior {
 

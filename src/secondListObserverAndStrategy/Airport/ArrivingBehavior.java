@@ -1,4 +1,4 @@
-package secondList.Airport;
+package secondListObserverAndStrategy.Airport;
 
 public class ArrivingBehavior implements FlightBehavior{
 
