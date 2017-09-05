@@ -11,7 +11,7 @@ public class TraditionalCoffee implements Drink{
 
 	@Override
 	public double getCost() {
-		return 1;
+		return 2;
 	}
 
 }

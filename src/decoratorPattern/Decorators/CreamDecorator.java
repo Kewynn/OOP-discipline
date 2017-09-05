@@ -16,7 +16,7 @@ public class CreamDecorator extends DrinkDecorator{
 
 	@Override
 	public double getCost() {
-		return drink.getCost() + 1.5;
+		return drink.getCost() + 2;
 	}
 
 }

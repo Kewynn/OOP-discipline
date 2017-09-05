@@ -15,7 +15,7 @@ public class FoamDecorator extends DrinkDecorator{
 
 	@Override
 	public double getCost() {
-		return drink.getCost() + 2.5;
+		return drink.getCost() + 1;
 	}
 
 }

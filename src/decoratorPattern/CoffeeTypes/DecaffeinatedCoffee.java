@@ -11,8 +11,7 @@ public class DecaffeinatedCoffee implements Drink{
 
 	@Override
 	public double getCost() {
-		// TODO Auto-generated method stub
-		return 3;
+		return 3.5;
 	}
 
 }
