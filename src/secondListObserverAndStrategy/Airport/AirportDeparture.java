@@ -26,12 +26,8 @@ public class AirportDeparture implements Airport{
 			ConcreteTotem co = iterator.next();
 			if(co.getNumber().equals(totem))
 				iterator.remove();
-		}/*
-		for(Totem t: this.totems){
-			if(t.getNumber().equals(totem)){
-				this.totems.remove(t);
-			}
-		}*/
+		}
+	
 		
 	}
 

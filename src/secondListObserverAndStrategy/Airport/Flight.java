@@ -1,12 +1,12 @@
 package secondListObserverAndStrategy.Airport;
 
-public class Flight extends AirportDeparture{
+public class Flight {
 	private String destiny;
 	private String numberFlight;
 	private String enterprise;
 	private String horary;
 	private FlightBehavior flightBehavior;
-	
+
 	public Flight(String destiny, String numberFlight, String enterprise, String horary,
 			FlightBehavior flightBehavior) {
 		this.destiny = destiny;
@@ -17,25 +17,26 @@ public class Flight extends AirportDeparture{
 	}
 
 	@Override
-	public boolean equals(Object obj){
-		if(obj == null){
+	public boolean equals(Object obj) {
+		if (obj == null) {
 			return false;
-		}if(obj instanceof Flight){
+		}
+		if (obj instanceof Flight) {
 			Flight f = (Flight) obj;
-			if(this.destiny == f.getDestiny() &&
-					this.enterprise == f.getEnterprise() &&
-					this.horary == f.getHorary() &&
-					this.numberFlight == f.getNumberFlight()){
+			if (this.destiny == f.getDestiny() && this.enterprise == f.getEnterprise() && this.horary == f.getHorary()
+					&& this.numberFlight == f.getNumberFlight()) {
 				return true;
 			}
-		}return false;
+		}
+		return false;
 	}
+
 	public String getDestiny() {
 		return destiny;
 	}
+
 	public void setDestiny(String destiny) {
 		this.destiny = destiny;
-		notifyTotem();
 	}
 
 	public String getNumberFlight() {
@@ -44,7 +45,6 @@ public class Flight extends AirportDeparture{
 
 	public void setNumberFlight(String numberFlight) {
 		this.numberFlight = numberFlight;
-		notifyTotem();
 	}
 
 	public String getEnterprise() {
@@ -53,7 +53,6 @@ public class Flight extends AirportDeparture{
 
 	public void setEnterprise(String enterprise) {
 		this.enterprise = enterprise;
-		notifyTotem();
 	}
 
 	public String getHorary() {
@@ -62,17 +61,10 @@ public class Flight extends AirportDeparture{
 
 	public void setHorary(String horary) {
 		this.horary = horary;
-		notifyTotem();
 	}
+
 	public FlightBehavior getFlightBehavior() {
 		return flightBehavior;
 	}
-
-	
-	
-	
-
-	
-	
 
 }
