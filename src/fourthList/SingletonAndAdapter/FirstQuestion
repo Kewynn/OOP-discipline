@@ -1,0 +1,30 @@
+a) Defina o padrão Singleton.
+	R - O padrão SIngleton garante que apenas uma instância da classe seja criada, e também fornece ponto de acesso global à mesma. 
+
+b) Quando o Singleton deve ser usado?
+	R -Geralmente, quando um recurso global é compartilhado; 
+	Aplicações multi-threaded;
+	Aplicações que acessam dados externos
+	Banco de dados;
+	Impressora;
+	Driver de dispositivo;
+	Também é bastante utilizado para logging, caching, pools de threads, preferências e configurações de sistemas, etc.
+	
+	
+c) Como se dá a implementação deste padrão? Descreva a terminologia e estrutura
+(uml).
+d) Quais são as três soluções para evitar que a sua classe Singleton tenha problemas
+quando múltiplas threads a utilizam? Disserte brevemente sobre cada uma,
+explicando suas vantagens/desvantagens.
+
+	R - 1ª Sincronizar o método getInstance():
+			Desvantagem: pode diminuir o desempenho do programa por um fator de 100;
+			Se o desempenho de getInstance não for crítico para o seu aplicativo, essa pode ser uma boa saída.
+		
+		2ª Utilizar a estratégia de eager initialization ao invés de lazy initialization.
+			Útil se você sabe que seu programa sempre cria e usa uma instância Singleton.
+			O construtor será chamado na primeira vez que a classe for carregada, ou seja, quando você tentar executar algum método (não necessariamente o getInstance) da classe em questão.
+
+	
+		3ª Usar a trava duplamente verificada para reduzir o uso da sincronização em getInstance():
+			Diminui o overhead imposto pela sincronização entre as threads (synchronized).
