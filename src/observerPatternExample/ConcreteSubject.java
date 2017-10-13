@@ -24,11 +24,6 @@ public class ConcreteSubject implements Subject {
 			if(co.equals(o))
 				iterator.remove();
 		}
-		/*for (ConcreteObserver cobs : observers) {
-			if (cobs.equals(o)) {
-				observers.remove(cobs);
-			}
-		}*/
 	}
 
 	@Override
