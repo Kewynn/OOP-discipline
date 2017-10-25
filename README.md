@@ -11,3 +11,4 @@ I'm using this repository to store my implementations of classroom exercises. Th
 5. Singleton
 6. Adapter
 7. Factory Method
+8. Abstract Factory
