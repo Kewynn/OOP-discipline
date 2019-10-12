@@ -1,1 +1,0 @@
-Composição é refente à do que a classe é composta, seus atributos e métodos. Herança é relacionado ao reuso do código, onde métodos podem ter diferentes funcionalidades mesmo possuindo o mesmo nome, o que podemos chamar de polimorfismo.

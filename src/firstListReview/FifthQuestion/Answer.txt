@@ -1,3 +1,0 @@
-Basicamente, na sobrecarga é possível criar vários métodos na mesma classe com o mesmo nome, porém com assinaturas diferentes. Na
-Sobreposição a ideia é, em vez de criar vários métodos com o mesmo nome na mesma classe, herdar o mesmo método para outras classes,
- substituindo o método da superclasse na subclasse sobrescrevendo-o. .
